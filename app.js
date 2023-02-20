@@ -428,6 +428,152 @@ async function startProcess() {
 }
 startProcess()
 
+*/
+
+/* importing files from another .js file
+// use export keyword in the other .js file to export 
+import {PI, getCircum, getArea} from "./math_util.js"
+
+console.log(PI)
+
+let circum = getCircum(10)
+console.log(circum)
+
+let area = getArea(10)
+console.log(area)
+*/
+
+/*DOM - Document Object Model
+// An interface for changing the content of a page
+//console.log(document)
+//console.dir(document)
+console.log(document.title)
+console.log(document.URL) 
+document.title = "TItle goes here" 
+document.body.style.backgroundColor = "skyblue" */
+
+
+/* element selectors
+let element = document.getElementById("myTitle")
+element.style.backgroundColor = "lightgreen"
+
+let fruits = document.getElementsByName("fruits")
+console.log(fruits)
+fruits.forEach(fruit => {
+  if(fruit.checked) {
+    console.log(fruit.value)
+  }
+}) 
+
+let vegetables = document.getElementsByTagName("li")
+vegetables[0].style.backgroundColor = "lightgreen"
+
+let desserts = document.getElementsByClassName("desserts")
+desserts[0].style.backgroundColor = "lightgreen"
+
+let element = document.querySelector("#myTitle")
+element[0].style.backgroundColor = "lightgreen"
+
+let element1 = document.querySelector(".myTitle")
+element1[0].style.backgroundColor = "lightgreen"  */
+
+
+/*  .fitstElementChild
+.lastELementChild
+.parentELement
+.nextElementSibling
+.previousElementSibling
+.children[]
+Array.from(.children)   */
+
+
+/* add and change HTML elements
+  .innerHTML  (but is vulnerable to XSS attacks)
+  .textContent (more secure) 
+  .append - adds to the end of the list
+  .prepend - adds to the beginning of the list
+  .insertBefore(given item, .getELementByTagName)
+
+ const nameTag = document.createElement("h1")
+nameTag.textContent = "BRO"
+document.body.append(nameTag) */
+
+/* to change CSS from JS file 
+const title = document.getElementById("myTitle")
+title.style.backgroundColor = "white"  
+title.style.color = "black"
+title.style.fontFamily = "consolas"  */
+
+
+/* events
+  .onclick - while clicking the respective button
+  .onload - loads when button clicked
+  .onmouseover - does something when hovered over
+  .onmouseout - does something when leaves
+  .onmousedown - does something when leaves
+  .onmouseup - does something when hovered over  */
+
+
+/*  .addEventListener(event, function, useCapture)
+   adding many event handlers to one element
+   even the same event invoking a different function 
+
+   const innerDiv = document.getElementById("innerDiv")
+   const outerDiv = document.getElementById("outerDiv")
+
+   /*innerDiv.addEventListener("mouseover", changeRed)
+   innerDiv.addEventListener("mouseout", changeGreen) 
+
+   function changeRed() {
+    innerDiv.style.backgroundColor = "red"
+   }
+
+   function changeGreen() {
+    innerDiv.style.backgroundColor = "lightgreen"
+   } 
+
+   innerDiv.addEventListener(("click"), changeBlue)
+   outerDiv.addEventListener("click", changeBlue, true)
+
+   function changeBlue(){
+    alert("You seleected this.id")
+    this.style.backgroundColor = "lightblue"
+   }  */
+
+/* CANVAS API - a means for drawing graphics, used for animations, data visualisation
+let canvas  = document.getElementById("myCan") 
+let context = canvas.getContext("2d")  */
+
+
+/* drawing lines on canvas
+context.strokeStyle = "purple"
+context.lineWidth = 10
+context.beginPath()
+context.moveTo(0,0)
+context.lineTo(250, 250)
+context.lineTo(250, 500)
+context.moveTo(500, 0)
+context.lineTo(250, 250)
+context.stroke()  */
+
+/*DRAW TRIANGLE
+context.strokeStyle = "grey"
+context.fillStyle = "yellow"
+context.lineWidth = 10
+context.beginPath()
+context.moveTo(250, 0)
+context.lineTo(0, 250)
+context.lineTo(500, 250)
+context.lineTo(250, 0)
+context.strokeStyle()
+context.fill()  */
+
+
+
+
+ 
+
+
 
 
 
